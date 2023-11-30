@@ -14,7 +14,7 @@ export function ensureAuthenticated(
 
   if (!authToken) {
     return response.status(401).json({
-      errorCode: "token.invalid",
+      errorCode: "Sessão inválida",
     });
   }
 
@@ -22,10 +22,10 @@ export function ensureAuthenticated(
 
   try {
     const { sub } = verify(token, process.env.JWT_SECRET) as Ipayload;
-    request.user_id = sub;
+    request.body = sub;
 
     return next();
   } catch (err) {
-    return response.status(401).json({ errorCode: "token.expired" });
+    return response.status(401).json({ errorCode: "Sessão inválida" });
   }
 }
