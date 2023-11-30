@@ -75,6 +75,12 @@ comando pra rodar o eslint
 npm run lint
 ```
 
+comando pra rodar o build
+
+```
+npm run build
+```
+
 #### confirguração do postgresql e prisma:
 
 crie um arquivo `.env` e coloque os seguintes comando
@@ -129,9 +135,13 @@ $ yarn dev || npm run dev
 ### Submissão:
 
     - [x] Repositório no GitHub.
-    - [x] Hospedagem: Heroku, Google Cloud, AWS, ou similar.
+    - [ ] Hospedagem: Heroku, Google Cloud, AWS, ou similar.
 
 <br>
 
 > [!AVISO]
 > Caso o API não esteja funcionando abaixo tem um video do projeto.
+
+<h1 align="center">
+  <img alt="desafio" title="#desafio" src="img/06fa40de-7532-4b71-8405-b124a2150297.gif" />
+</h1>
