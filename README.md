@@ -111,3 +111,22 @@ $ yarn dev || npm run dev
 - JWT
 - Jest
 - Prettier e Eslint
+
+### Requisitos:
+
+    - [x] Persistência de dados.
+    - [x] Sistema de build com gerenciamento de dependências.
+    - [ ] Task runner para build.
+    - [x] Padronização de estilo (ex: jsHint/jsLint).
+    - [x] Framework: Express, Hapi, ou similar.
+
+### Requisitos Desejáveis:
+
+    - [x] JWT como token.
+    - [x] Testes unitários.
+    - [x] Criptografia hash na senha e token.
+
+### Submissão:
+
+    - [x] Repositório no GitHub.
+    - [x] Hospedagem: Heroku, Google Cloud, AWS, ou similar.
