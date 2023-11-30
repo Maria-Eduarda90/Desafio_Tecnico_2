@@ -20,7 +20,7 @@ model User {
   ultimo_login     DateTime?
   telefone         Fone[]
 
-  @@map("user")
+  @@map("users")
 }
 
 model Fone {
