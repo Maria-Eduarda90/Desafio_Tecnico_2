@@ -131,5 +131,7 @@ $ yarn dev || npm run dev
     - [x] Repositório no GitHub.
     - [x] Hospedagem: Heroku, Google Cloud, AWS, ou similar.
 
+<br>
+
 > [!AVISO]
-> Caso o API não esteja funcionando abaixo tem um video do projeto funcionando
+> Caso o API não esteja funcionando abaixo tem um video do projeto.
