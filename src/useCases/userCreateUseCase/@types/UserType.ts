@@ -1,4 +1,4 @@
-export interface IUserRequest {
+export interface ICreateUserRequest {
   nome: string;
   email: string;
   senha: string;
