@@ -33,6 +33,7 @@ Rotas:
 POST: criação do usuario
 POST: autenticação do usuario
 GET: listagem dos usuarios
+GET: para buscar usuario
 ```
 
 Testes Unitarios `exemplo:`
@@ -143,5 +144,5 @@ $ yarn dev || npm run dev
 > Caso o API não esteja funcionando abaixo tem um video do projeto.
 
 <h1 align="center">
-  <img alt="desafio" title="#desafio" src="img/06fa40de-7532-4b71-8405-b124a2150297.gif" />
+  <img alt="desafio" title="#desafio" src="img/.gif" />
 </h1>
