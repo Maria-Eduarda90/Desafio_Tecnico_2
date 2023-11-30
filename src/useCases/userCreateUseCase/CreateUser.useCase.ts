@@ -1,10 +1,10 @@
 import { sign } from "jsonwebtoken";
 import { hash } from "bcryptjs";
 import { prismaClient } from "../../prisma/prismaClient.config";
-import { IUserRequest } from "./@types/UserType";
+import { ICreateUserRequest } from "./@types/UserType";
 
 class CreateUserUseCase {
-  async signUp({ nome, email, senha, telefone }: IUserRequest) {
+  async signUp({ nome, email, senha, telefone }: ICreateUserRequest) {
     const emailAlreadyExists = await prismaClient.user.findFirst({
       where: {
         email,
