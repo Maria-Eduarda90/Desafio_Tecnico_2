@@ -144,5 +144,5 @@ $ yarn dev || npm run dev
 > Caso o API não esteja funcionando abaixo tem um video do projeto.
 
 <h1 align="center">
-  <img alt="desafio" title="#desafio" src="img/.gif" />
+  <img alt="desafio" title="#desafio" src="img/desafio_tecnico.gif" />
 </h1>
