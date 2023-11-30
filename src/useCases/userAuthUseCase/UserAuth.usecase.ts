@@ -1,18 +1,24 @@
 import { prismaClient } from "../../prisma/prismaClient.config";
 import { IAuthUserRequest } from "./@types/AuthUserType";
 import { sign } from "jsonwebtoken";
+import { compare } from "bcryptjs";
 
 class AuthUserUseCase {
   async signIn({ email, senha }: IAuthUserRequest) {
-    const existUser = await prismaClient.user.findFirst({
+    const existUser = await prismaClient.users.findFirst({
       where: {
         email,
-        senha,
       },
     });
 
     if (!existUser) {
       throw new Error("Usuário e/ou senha inválidos").message;
+    }
+
+    const isPasswordValid = await compare(senha, existUser.senha);
+
+    if (!isPasswordValid) {
+      throw new Error("Senha inválida");
     }
 
     const token = sign(

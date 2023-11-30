@@ -5,7 +5,7 @@ import { ICreateUserRequest } from "./@types/UserType";
 
 class CreateUserUseCase {
   async signUp({ nome, email, senha, telefone }: ICreateUserRequest) {
-    const emailAlreadyExists = await prismaClient.user.findFirst({
+    const emailAlreadyExists = await prismaClient.users.findFirst({
       where: {
         email,
       },
@@ -19,7 +19,7 @@ class CreateUserUseCase {
 
     const ultimoLogin = new Date();
 
-    const user = await prismaClient.user.create({
+    const user = await prismaClient.users.create({
       data: {
         nome,
         email,
