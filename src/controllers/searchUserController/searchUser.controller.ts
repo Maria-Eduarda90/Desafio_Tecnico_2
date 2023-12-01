@@ -7,7 +7,7 @@ class SearchUserController {
 
     const result = await service.execute(request.params.user_id);
 
-    return response.json(result);
+    return response.status(200).json(result);
   }
 }
 
